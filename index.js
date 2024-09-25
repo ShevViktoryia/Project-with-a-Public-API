@@ -24,7 +24,7 @@ app.post("/get-random-fact", async (req, res) => {
 app.post("/get-fact", async (req, res) => {
   const id = req.body.id;
   try {
-    const result = await axios.get(API_URL + "/facts/:" + id);
+    const result = await axios.get(API_URL + "/facts/" + id);
     res.render("index.ejs", { content: JSON.stringify(result.data.text) });
   } catch (error) {
     res.render("index.ejs", { content: JSON.stringify(error.response.data) });

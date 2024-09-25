@@ -116,11 +116,8 @@
         <label for="idInput">Id:</label>
         <input type="text" id="idInput" name="id" />
 
-        <label for="secretInput">Secret:</label>
+        <label for="secretInput">Fact:</label>
         <input type="text" id="secretInput" name="secret" />
-
-        <label for="scoreInput">Score:</label>
-        <input type="number" id="scoreInput" name="score" />
 
         <label for="submit">Route:</label>
         <input
@@ -130,20 +127,6 @@
           formaction="/get-random-fact"
         />
         <input id="get" type="submit" value="GET" formaction="/get-fact" />
-        <input id="post" type="submit" value="POST" formaction="/post-fact" />
-        <input id="put" type="submit" value="PUT" formaction="/put-fact" />
-        <input
-          id="patch"
-          type="submit"
-          value="PATCH"
-          formaction="/patch-fact"
-        />
-        <input
-          id="delete"
-          type="submit"
-          value="DELETE"
-          formaction="/delete-fact"
-        />
       </form>
     </div>
   </body>
