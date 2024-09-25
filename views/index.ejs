@@ -60,6 +60,11 @@
         padding: 20px 5px;
       }
 
+      #get-random-fact {
+        background-color: rgb(221, 140, 153);
+        margin-bottom: 10px;
+      }
+
       #get {
         background-color: #2ecc71;
       }
@@ -118,6 +123,12 @@
         <input type="number" id="scoreInput" name="score" />
 
         <label for="submit">Route:</label>
+        <input
+          id="get-random-fact"
+          type="submit"
+          value="GET RANDOM FACT"
+          formaction="/get-random-fact"
+        />
         <input id="get" type="submit" value="GET" formaction="/get-fact" />
         <input id="post" type="submit" value="POST" formaction="/post-fact" />
         <input id="put" type="submit" value="PUT" formaction="/put-fact" />
